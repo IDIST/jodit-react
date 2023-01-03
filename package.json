@@ -1,5 +1,5 @@
 {
-  "name": "jodit-react",
+  "name": "idist-jodit-react",
   "version": "1.3.24",
   "description": "Jodit is awesome and usefully wysiwyg editor with filebrowser",
   "main": "build/jodit-react.js",
@@ -16,6 +16,7 @@
     "rte"
   ],
   "dependencies": {
+    "idist-jodit": "^3.20.9"
   },
   "peerDependencies": {
     "react": "~0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
