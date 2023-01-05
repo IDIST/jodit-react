@@ -3444,10 +3444,10 @@ icss-utils@^5.0.0, icss-utils@^5.1.0:
   resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-5.1.0.tgz#c6be6858abd013d768e98366ae47e25d5887b1ae"
   integrity sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==
 
-idist-jodit@^3.20.9:
-  version "3.20.9"
-  resolved "https://registry.yarnpkg.com/idist-jodit/-/idist-jodit-3.20.9.tgz#c5e1207b465514b0c71e661cad313d70f6768926"
-  integrity sha512-3AgSGhIPgqvx/1uTSjXEsobyD4Lje4DG/rBNtMozUIlPGAA02yzl6TQEIwoPV+Y6ckxSWduUJw8/kfLjieUACw==
+idist-jodit@^3.20.10:
+  version "3.20.10"
+  resolved "https://registry.yarnpkg.com/idist-jodit/-/idist-jodit-3.20.10.tgz#4a54f28f272bbc9413e0314ae86c53fa8dbc7ee4"
+  integrity sha512-EaNwTgY//dnKD9OGDGaUDH2Gy7zy8b4/K+ERJ8Eeh0eTTHnskeo9xwVPItMx++zjN6EBcVkPLtXJm1agvwElFQ==
   dependencies:
     "@giphy/js-fetch-api" "^4.4.0"
     a-color-picker "^1.2.1"
