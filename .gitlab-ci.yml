@@ -22,12 +22,15 @@ build:
   script:
     - npm install
     - npm run build
+    - npm run build:demo
   # 4-1.Artifacts
   # artifacts의 기능을 활용하면 stage의 결과를 다음 stage가 사용할 수 있도록 도와주며 그렇게 만들어진 결과 파일등을 만료시키는 시간 역시 정해줄 수 있습니다.
   artifacts:
     expire_in: 1 hour # 만료 시간을 설정해 줍니다.
     paths: # 다음 stage에서 사용할 파일의 경로를 지정해 줍니다.
-      - build
+      - index.html
+      - app.js
+      # - build
 
 # 5. S3 deploy
 deploy-to-s3-live:
@@ -35,7 +38,8 @@ deploy-to-s3-live:
   stage: deploy
   script: # aws s3 sync 명령어를 활용하여 빌드된 파일을 나의 버킷에 올려주고 public-read 가 가능하도록 설정해 줍니다.
     - pip install awscli
-    - aws s3 sync build s3://editor-react.superclubs.io --acl public-read
+    - aws s3 sync index.html s3://editor-react.superclubs.io/ --acl public-read
+    - aws s3 sync app.js s3://editor-react.superclubs.io/ --acl public-read
     - aws cloudfront create-invalidation --distribution-id $AWS_DISTRIBUTION_ID --paths "/*"
   only: # 해당 stage는 master branch에서만 실행 가능하도록 설정해 줍니다.
     - master

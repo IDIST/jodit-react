@@ -51,9 +51,9 @@
   "scripts": {
     "newversion": "npm run lint && npm update && rm -rf build/ && npm run build && npm version patch --no-git-tag-version && npm run github && npm publish ./",
     "lint": "eslint ./",
-    "demo": "cd examples && export NODE_ENV=development && webpack serve --config ./webpack.config.js --mode development",
-    "start": "npm run demo",
+    "start": "cd examples && export NODE_ENV=development && webpack serve --config ./webpack.config.js --mode development",
     "build": "export NODE_ENV=production && webpack --mode production",
+    "build:demo": "cd examples && export NODE_ENV=production && webpack --mode production",
     "github": "git add --all  && git commit -m \"New version $npm_package_version. Read more https://github.com/jodit/jodit-react/releases/tag/$npm_package_version \" && git tag $npm_package_version && git push --tags origin HEAD:master"
   },
   "repository": {
