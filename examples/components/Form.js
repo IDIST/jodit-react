@@ -10,7 +10,8 @@ const Form = () => {
 	// States
 	const [config] = useState({
 		toolbarStyle: 'top',
-		minHeight: '500px'
+		minHeight: '500px',
+		uploaderApi: 'https://dev.server.superclubs.io/api/v1/media/'
 	});
 	const [textAreaValue] = useState('');
 
