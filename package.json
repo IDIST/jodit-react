@@ -16,7 +16,7 @@
     "rte"
   ],
   "dependencies": {
-    "idist-jodit": "^3.20.10"
+    "idist-jodit": "^3.20.11"
   },
   "peerDependencies": {
     "react": "~0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
